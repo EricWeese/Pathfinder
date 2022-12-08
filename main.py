@@ -69,6 +69,7 @@ def main():
     SCREEN.fill(WHITE)
     start, end = False, False
     clearGrid()
+
     drawGrid()
     while True:
         for event in pygame.event.get():
