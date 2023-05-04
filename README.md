@@ -20,16 +20,65 @@ The $\color{lightblue}{\textsf{Light Blue}}$ cells are the *calculated path* nod
 # Algorithms
 All three algorithms are some form of the formula below. The goal of each algorithm is to minimize the function $f(x)$.
 
-![](/images/formula.png)
+<p align="center">
+<img src=./images/formula.png/>
+</p>
+
 
 The term $g(x)$ is calculated as the **path distance** from any given node to the start node. The **path distance** from the start node to the node outlined in red is 10 because it takes a minimum of 10 "moves" to get there.
 
 The term $h(x)$ is calculated as the **manhattan distance** from any given node to the start node. The **manhattan distance** from the start node to the node outlined in red is 4. Manhattan distance is calculated as: $d_m = |x_1-x_2| + |y_1-y_2|$.
 
-![](/images/distance.png)
+<p align="center">
+<img src=./images/distance.png/>
+</p>
+
+<p align="center">
 
 |Algorithm|Formula|
 |------|------|
 |UCS|$f(x) = g(x)$|
 |BFS|$f(x) = h(x)$|
 |A*|$f(x) = g(x) + h(x)$|
+
+</p>
+
+<br/>
+The numbers inside the yellow cells are the hueristic value for that node or the $f(x)$. Once the path has been found and gets revealed by the $\color{lightblue}{\textsf{light blue}}$ cells, the number changes from hueristic value to path distance value. This change only occurs in $\color{lightblue}{\textsf{light blue}}$ cells.
+
+<br/>
+
+## A* Variable (Alternatives)
+The original formula can be modified to give the user more control over the algorithm:
+
+$$\huge f(x) = ag(x) + bh(x)$$
+
+The $a$ and $b$ coefficients allow the user to change the hueristic of the function.
+
+
+<p align="center">
+
+|a = 1, b = 1|a = 1, b = 0.5|a = 0.5, b = 1
+|------|------|------|
+|![](/images/astar11.png)|![](/images/astar105.png)|![](/images/astar051.png)|
+
+</p>
+
+$f(x) = 1*g(x) + 0*h(x)$ would be the same as UCS.
+
+$f(x) = 0*g(x) + 1*h(x)$ would be the same as BFS.
+
+$f(x) = 1*g(x) + 1*h(x)$ would be the same as A*.
+
+# Hyperparameters
+test 
+<p align="center">
+
+|Hyperparameter|Description|
+|--|--|
+|Tickrate|How long to wait until expanding next node (in ms).|
+|Window Height|How many pixels tall the window is.|
+|Window Width|How many pixels wide the window is.|
+|Block Size|Number of rows is equal to Window Height divided by Block Size. Number of columns is equal to the Window Width divided by Block Size. |
+
+</p>
