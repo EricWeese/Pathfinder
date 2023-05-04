@@ -4,17 +4,17 @@ This python application showcases pathfinding using the Uniform Cost Search, Bes
 Below is an example output of UCS:
 ![](/images/default.gif)
 
-The <font color="green">Green</font> cell is the *starting* node
+The <span style="color:green">Green</span> cell is the *starting* node
 
-The <font color="red">Red</font> cell is the *ending/goal* node
+The <span style="color:red">Red</span> cell is the *ending/goal* node
 
-The <font color="black">Black</font> cells are the *wall* nodes
+The <span style="color:black">Black</span> cells are the *wall* nodes
 
-The <font color="blue">Blue</font> cell is the *current expanded* node
+The <span style="color:blue">Blue</span> cell is the *current expanded* node
 
-The <font color="yellow">Yellow</font> cells are the *previously expanded* nodes
+The <span style="color:yellow">Yellow</span> cells are the *previously expanded* nodes
 
-The <font color="lightblue">Light Blue</font> cells are the *calculated path* nodes
+The <span style="color:lightblue">Light Blue</span> cells are the *calculated path* nodes
 
 
 # Algorithms
