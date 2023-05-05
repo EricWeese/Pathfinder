@@ -97,3 +97,11 @@ $f(x) = 1 \times g(x) + 1 \times h(x)$ would be the same as A*.
 </p>
 
 *All images above used UCS search algorithm*
+
+# Other Examples
+
+||UCS|BFS|A*|
+|--|--|--|--|
+|Screen|![](/images/ucs1.gif)|![](/images/bfs1.gif)|![](/images/astar1.gif)|
+|Path Length|66|76|66|
+|Nodes Expanded|1199|117|708|
