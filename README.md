@@ -64,21 +64,36 @@ The $a$ and $b$ coefficients allow the user to change the hueristic of the funct
 
 </p>
 
-$f(x) = 1*g(x) + 0*h(x)$ would be the same as UCS.
+$f(x) = 1 \times g(x) + 0 \times h(x)$ would be the same as UCS.
 
-$f(x) = 0*g(x) + 1*h(x)$ would be the same as BFS.
+$f(x) = 0 \times g(x) + 1 \times h(x)$ would be the same as BFS.
 
-$f(x) = 1*g(x) + 1*h(x)$ would be the same as A*.
+$f(x) = 1 \times g(x) + 1 \times h(x)$ would be the same as A*.
 
 # Hyperparameters
-test 
+
 <p align="center">
 
 |Hyperparameter|Description|
 |--|--|
-|Tickrate|How long to wait until expanding next node (in ms).|
+|Ticktime|How long to wait until expanding next node (in ms).|
 |Window Height|How many pixels tall the window is.|
 |Window Width|How many pixels wide the window is.|
 |Block Size|Number of rows is equal to Window Height divided by Block Size. Number of columns is equal to the Window Width divided by Block Size. |
 
 </p>
+
+### Examples
+<p align="center">
+
+|800x800 Block Size of 10|1000x1000 Block Size of 40|
+|--|--|
+|![](/images/800x800cs10.png)|![](/images/1000x1000cs40.png)|
+
+|Ticktime of 0|Ticktime of 20|Ticktime of 100|
+|--|--|--|
+|![](/images/tickrate0.gif)|![](/images/default.gif)|![](/images/tickrate100.gif)|
+
+</p>
+
+*All images above used UCS search algorithm*
