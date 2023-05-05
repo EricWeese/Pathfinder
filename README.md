@@ -35,11 +35,11 @@ The term $h(x)$ is calculated as the **manhattan distance** from any given node 
 
 <p align="center">
 
-|Algorithm|Formula|
-|------|------|
-|UCS|$f(x) = g(x)$|
-|BFS|$f(x) = h(x)$|
-|A*|$f(x) = g(x) + h(x)$|
+|Algorithm|Formula|Notes|
+|------|------|------|
+|UCS|$f(x) = g(x)$|Takes a long time, but always finds shortest path.|
+|BFS|$f(x) = h(x)$|Very quick, but will often find a path that is **NOT** the shortest.|
+|A*|$f(x) = g(x) + h(x)$|Always finds shortest path and is quicker than UCS (but slower than BFS).|
 
 </p>
 
@@ -64,11 +64,11 @@ The $a$ and $b$ coefficients allow the user to change the hueristic of the funct
 
 </p>
 
-$f(x) = 1 \times g(x) + 0 \times h(x)$ would be the same as UCS.
+$a = 1,\; b = 0$ would be the same as UCS.
 
-$f(x) = 0 \times g(x) + 1 \times h(x)$ would be the same as BFS.
+$a = 0,\; b = 1$ would be the same as BFS.
 
-$f(x) = 1 \times g(x) + 1 \times h(x)$ would be the same as A*.
+$a = 1,\; b = 1$ would be the same as A*.
 
 # Hyperparameters
 
@@ -96,12 +96,20 @@ $f(x) = 1 \times g(x) + 1 \times h(x)$ would be the same as A*.
 
 </p>
 
-*All images above used UCS search algorithm*
+*All images above used UCS search algorithm and are 800x800 with block size of 20.*
 
 # Other Examples
 
 ||UCS|BFS|A*|
 |--|--|--|--|
 |Screen|![](/images/ucs1.gif)|![](/images/bfs1.gif)|![](/images/astar1.gif)|
-|Path Length|66|76|66|
-|Nodes Expanded|1199|117|708|
+|Path Length|$\color{green}{66}$|$\color{red}{76}$|$\color{green}{66}$|
+|Nodes Expanded|$\color{red}{1199}$|$\color{green}{117}$|$\color{yellow}{708}$|
+
+</br>
+
+||UCS|BFS|A*|
+|--|--|--|--|
+|Screen|![](/images/ucs2.gif)|![](/images/bfs2.gif)|![](/images/astar2.gif)|
+|Path Length|$\color{green}{45}$|$\color{red}{75}$|$\color{green}{45}$|
+|Nodes Expanded|$\color{red}{1242}$|$\color{green}{148}$|$\color{yellow}{513}$|
