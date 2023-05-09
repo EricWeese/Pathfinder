@@ -27,7 +27,7 @@ All three algorithms are some form of the formula below. The goal of each algori
 
 The term $g(x)$ is calculated as the **path distance** from any given node to the start node. The **path distance** from the start node to the node outlined in red is 10 because it takes a minimum of 10 "moves" to get there.
 
-The term $h(x)$ is calculated as the **manhattan distance** from any given node to the start node. The **manhattan distance** from the start node to the node outlined in red is 4. Manhattan distance is calculated as: $d_m = |x_1-x_2| + |y_1-y_2|$.
+The term $h(x)$ is calculated as the **manhattan distance** from any given node to the end/goal node. The **manhattan distance** from the start node to the node outlined in red is 4. Manhattan distance is calculated as: $d_m = |x_1-x_2| + |y_1-y_2|$.
 
 <p align="center">
 <img src=./images/distance.png/>
@@ -44,7 +44,9 @@ The term $h(x)$ is calculated as the **manhattan distance** from any given node 
 </p>
 
 <br/>
+
 The numbers inside the yellow cells are the hueristic value for that node or the $f(x)$. Once the path has been found and gets revealed by the $\color{lightblue}{\textsf{light blue}}$ cells, the number changes from hueristic value to path distance value. This change only occurs in $\color{lightblue}{\textsf{light blue}}$ cells.
+
 
 <br/>
 
@@ -113,3 +115,4 @@ $a = 1,\; b = 1$ would be the same as A*.
 |Screen|![](/images/ucs2.gif)|![](/images/bfs2.gif)|![](/images/astar2.gif)|
 |Path Length|$\color{green}{45}$|$\color{red}{75}$|$\color{green}{45}$|
 |Nodes Expanded|$\color{red}{1242}$|$\color{green}{148}$|$\color{yellow}{513}$|
+
