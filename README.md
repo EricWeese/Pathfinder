@@ -66,11 +66,11 @@ The $a$ and $b$ coefficients allow the user to change the hueristic of the funct
 
 </p>
 
-$a = 1,\; b = 0$ would be the same as UCS.
+$a = 1,\ b = 0$ would be the same as UCS.
 
-$a = 0,\; b = 1$ would be the same as BFS.
+$a = 0,\ b = 1$ would be the same as BFS.
 
-$a = 1,\; b = 1$ would be the same as A*.
+$a = 1,\ b = 1$ would be the same as A*.
 
 # Hyperparameters
 
