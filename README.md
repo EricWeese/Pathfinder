@@ -114,5 +114,5 @@ $a = 1,\ b = 1$ would be the same as A*.
 |--|--|--|--|
 |Screen|![](/images/ucs2.gif)|![](/images/bfs2.gif)|![](/images/astar2.gif)|
 |Path Length|$\color{green}{45}$|$\color{red}{75}$|$\color{green}{45}$|
-|Nodes Expanded|$\color{red}{1242}$|$\color{green}{148}$|$\color{FFC107}{513}$|
+|Nodes Expanded|$\color{red}{1242}$|$\color{green}{148}$|$\color[HTML]{FFC107}{513}$|
 
