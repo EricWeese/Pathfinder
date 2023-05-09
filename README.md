@@ -12,7 +12,7 @@ The $\color{black}{\textsf{Black}}$ cells are the *wall* nodes
 
 The $\color{blue}{\textsf{Blue}}$ cell is the *current expanded* node
 
-The $\color{FFC107}{\textsf{Yellow}}$ cells are the *previously expanded* nodes
+The $\color{goldenrod}{\textsf{Yellow}}$ cells are the *previously expanded* nodes
 
 The $\color{lightblue}{\textsf{Light Blue}}$ cells are the *calculated path* nodes
 
@@ -45,7 +45,7 @@ The term $h(x)$ is calculated as the **manhattan distance** from any given node 
 
 <br/>
 
-The numbers inside the $\color{FFC107}{\textsf{yellow}}$ cells are the hueristic value for that node or the $f(x)$. Once the path has been found and gets revealed by the $\color{lightblue}{\textsf{light blue}}$ cells, the number changes from hueristic value to path distance value. This change only occurs in $\color{lightblue}{\textsf{light blue}}$ cells.
+The numbers inside the $\color{goldenrod}{\textsf{yellow}}$ cells are the hueristic value for that node or the $f(x)$. Once the path has been found and gets revealed by the $\color{lightblue}{\textsf{light blue}}$ cells, the number changes from hueristic value to path distance value. This change only occurs in $\color{lightblue}{\textsf{light blue}}$ cells.
 
 
 <br/>
@@ -106,7 +106,7 @@ $a = 1,\ b = 1$ would be the same as A*.
 |--|--|--|--|
 |Screen|![](/images/ucs1.gif)|![](/images/bfs1.gif)|![](/images/astar1.gif)|
 |Path Length|$\color{green}{66}$|$\color{red}{76}$|$\color{green}{66}$|
-|Nodes Expanded|$\color{red}{1199}$|$\color{green}{117}$|$\color{FFC107}{708}$|
+|Nodes Expanded|$\color{red}{1199}$|$\color{green}{117}$|$\color{goldenrod}{708}$|
 
 </br>
 
@@ -114,5 +114,5 @@ $a = 1,\ b = 1$ would be the same as A*.
 |--|--|--|--|
 |Screen|![](/images/ucs2.gif)|![](/images/bfs2.gif)|![](/images/astar2.gif)|
 |Path Length|$\color{green}{45}$|$\color{red}{75}$|$\color{green}{45}$|
-|Nodes Expanded|$\color{red}{1242}$|$\color{green}{148}$|$\color[HTML]{FFC107}{513}$|
+|Nodes Expanded|$\color{red}{1242}$|$\color{green}{148}$|$\color{goldenrod}{513}$|
 
